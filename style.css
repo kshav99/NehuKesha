@@ -7,9 +7,18 @@ body {
 
 h1 {
   font-size: 4em;
-  color: #e954a8; /* Bold, romantic color for the header */
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Subtle text shadow */
-  margin-bottom: 20px;
+  color: #f54291; /* Vivid magenta-pink color for a bold look */
+  font-family: 'Playfair Display', serif; /* Elegant serif font */
+  text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4); /* Enhanced text shadow for depth */
+  margin-bottom: 30px; /* Slightly increased margin for better spacing */
+  letter-spacing: 2px; /* Add some letter spacing for a sophisticated look */
+  text-transform: uppercase; /* Uppercase text for emphasis */
+  transition: color 0.3s ease-in-out; /* Smooth color transition on hover */
+}
+
+/* Hover effect for the header */
+h1:hover {
+  color: #ff4d6d; /* Brighter color on hover */
 }
 
 #photo-container {
@@ -29,9 +38,13 @@ h1 {
 
 #love-quote {
   font-style: italic;
-  font-size: 1.2em;
-  color: #a8a8e9; /* Dreamy color for the quote */
-  margin-bottom: 50px;
+  font-size: 1.5em; /* Larger font size for emphasis */
+  color: #6a0572; /* Rich purple color */
+  margin-bottom: 30px; /* Slightly reduced margin for better spacing */
+  padding: 20px; /* Add padding for a more visually appealing quote box */
+  border-radius: 10px; /* Rounded corners for a modern look */
+  background-color: #f0ebf4; /* Soft lavender background */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
 }
 
 audio {
