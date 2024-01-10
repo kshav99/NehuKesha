@@ -1,10 +1,20 @@
 body {
-  background-image: linear-gradient(to bottom right, #f7e5e0, #ffd5d0); /* Soft, romantic gradient background */
-  font-family: 'Montserrat', sans-serif; /* Elegant font */
-  text-align: center;
-  margin: 50px;
+  background: linear-gradient(45deg, #ff8080, #ffcc80, #ffff80, #80ff80, #80cfff, #ff80ff); /* Gradient colors */
+  background-size: 400% 400%; /* Increase the background size for smoother transitions */
+  animation: gradientChange 15s ease infinite; /* Animation settings (adjust duration as needed) */
 }
 
+@keyframes gradientChange {
+  0% {
+    background-position: 0% 50%; /* Start position */
+  }
+  50% {
+    background-position: 100% 50%; /* Middle position */
+  }
+  100% {
+    background-position: 0% 50%; /* End position */
+  }
+}
 h1 {
   font-size: 4em;
   color: #f54291; /* Vivid magenta-pink color for a bold look */
