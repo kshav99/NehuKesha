@@ -1,0 +1,50 @@
+# _config.yml
+
+# Site settings
+title: Your Site Title
+description: A brief description of your site
+baseurl: "/your-repository-name" # Change this to match your repository name
+url: "https://your-username.github.io" # Change this to your GitHub Pages URL
+
+# Build settings
+theme: minima # You can change this to your preferred Jekyll theme
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# GitHub Pages settings
+remote_theme: "mmistakes/minimal-mistakes" # You can use any other Jekyll theme or remove this line if using the default theme
+
+# Exclude files/folders from the build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - _site
+  - .git
+  - .github
+  - .gitignore
+  - README.md
+
+# Jekyll SEO settings
+seo:
+  name: Your Name
+  social:
+    - name: twitter
+      username: your_twitter_username
+    - name: github
+      username: your_github_username
+    # Add other social profiles as needed
+
+# Permalinks
+permalink: /:year/:month/:day/:title/
+
+# Markdown settings
+kramdown:
+  input: GFM
+  auto_ids: true
+
+# GitHub Pages settings
+github_pages:
+  build_revision: "{{ site.github.build_revision }}"
