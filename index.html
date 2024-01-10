@@ -33,27 +33,12 @@ modify this code to be the first page when i visit my website-<!DOCTYPE html>
         <source src="https://www.youtube.com/watch?v=SezFNtFCeQY&t=19s" type="audio/mp3">
         Your browser does not support the audio element.
     </audio>
-
-    <script>
-        // Change these values with your image URLs
-        const photos = [
-            'https://drive.google.com/file/d/1ZH3HFBGpRYtWMgkxXg7qgnhGKio36CXV/view?usp=drive_link',
-            'https://drive.google.com/file/d/1K8KbA9hW1wY6A7OLBw6PHoRMVFx2Ht6h/view?usp=drive_link',
-        ];
-
-        let currentPhotoIndex = 0;
-        const photoElement = document.getElementById('photo');
-
-        function changePhoto() {
-            photoElement.src = photos[currentPhotoIndex];
-            currentPhotoIndex = (currentPhotoIndex + 1) % photos.length;
-        }
-
+  <script>
         // Change the love quote periodically
         const loveQuotes = [
             'Love is the greatest adventure.',
             'You are my today and all of my tomorrows.',
-            'In you, I've found the love of my life and my closest, truest friend.',
+            'In you, I\'ve found the love of my life and my closest, truest friend.',
             // Add more quotes as needed
         ];
 
@@ -65,9 +50,8 @@ modify this code to be the first page when i visit my website-<!DOCTYPE html>
             currentQuoteIndex = (currentQuoteIndex + 1) % loveQuotes.length;
         }
 
-        // Set interval for photo and quote change (in milliseconds)
+        // Set interval for quote change (in milliseconds)
         setInterval(() => {
-            changePhoto();
             changeLoveQuote();
         }, 5000); // Change every 5 seconds
     </script>
