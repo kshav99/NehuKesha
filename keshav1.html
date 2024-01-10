@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kesha ki Nehu</title>
+    <style>
+        body {
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        #love-quote {
+            font-style: italic;
+            color: #ff66b2;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Our Love Story</h1>
+
+    <div id="photo-container">
+        <img id="photo" src="" alt="Changing Photo" style="max-width: 100%; max-height: 400px;">
+    </div>
+
+    <p id="love-quote">"Love is not about how many days, months, or years you have been together. Love is about how much you love each other every single day."</p>
+
+    <audio controls loop>
+        <source src="your-audio-file.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script>
+        // Change these values with your image URLs
+        const photos = [
+            'https://drive.google.com/file/d/1ZH3HFBGpRYtWMgkxXg7qgnhGKio36CXV/view?usp=drive_link',
+            'https://drive.google.com/file/d/1K8KbA9hW1wY6A7OLBw6PHoRMVFx2Ht6h/view?usp=drive_link',
+        ];
+
+        let currentPhotoIndex = 0;
+        const photoElement = document.getElementById('photo');
+
+        function changePhoto() {
+            photoElement.src = photos[currentPhotoIndex];
+            currentPhotoIndex = (currentPhotoIndex + 1) % photos.length;
+        }
+
+        // Change the love quote periodically
+        const loveQuotes = [
+            'Love is the greatest adventure.',
+            'You are my today and all of my tomorrows.',
+            'In you, I've found the love of my life and my closest, truest friend.',
+            // Add more quotes as needed
+        ];
+
+        let currentQuoteIndex = 0;
+        const loveQuoteElement = document.getElementById('love-quote');
+
+        function changeLoveQuote() {
+            loveQuoteElement.textContent = `"${loveQuotes[currentQuoteIndex]}"`;
+            currentQuoteIndex = (currentQuoteIndex + 1) % loveQuotes.length;
+        }
+
+        // Set interval for photo and quote change (in milliseconds)
+        setInterval(() => {
+            changePhoto();
+            changeLoveQuote();
+        }, 5000); // Change every 5 seconds
+    </script>
+
+</body>
+</html>
