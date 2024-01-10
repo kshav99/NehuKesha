@@ -1,31 +1,41 @@
 body {
-    background-color: #ffe6f2; /* Light pink background color */
-    font-family: 'Arial', sans-serif;
-    text-align: center;
-    margin: 50px;
+  background-image: linear-gradient(to bottom right, #f7e5e0, #ffd5d0); /* Soft, romantic gradient background */
+  font-family: 'Montserrat', sans-serif; /* Elegant font */
+  text-align: center;
+  margin: 50px;
 }
 
 h1 {
-    color: #ff66b2; /* Pink text color for the heading */
+  font-size: 4em;
+  color: #e954a8; /* Bold, romantic color for the header */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Subtle text shadow */
+  margin-bottom: 20px;
 }
 
 #photo-container {
-    margin-top: 20px;
+  border-radius: 10px;
+  overflow: hidden; /* Maintain image proportions */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+  margin-bottom: 30px;
+}
+
+#photo {
+  transition: transform 0.3s ease-in-out; /* Smooth image change */
+}
+
+#photo:hover {
+  transform: scale(1.1); /* Subtle zoom on hover */
 }
 
 #love-quote {
-    font-style: italic;
-    color: #ff66b2; /* Pink text color for the love quote */
-    margin-top: 20px;
+  font-style: italic;
+  font-size: 1.2em;
+  color: #a8a8e9; /* Dreamy color for the quote */
+  margin-bottom: 50px;
 }
 
 audio {
-    margin-top: 20px;
-}
-
-/* Optional: Add some padding to the image container */
-#photo-container {
-    padding: 10px;
-    border: 2px solid #ff66b2; /* Pink border around the image container */
-    border-radius: 10px; /* Rounded corners */
+  margin-bottom: 30px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
